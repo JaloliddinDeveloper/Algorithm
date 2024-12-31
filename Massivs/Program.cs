@@ -1,7 +1,7 @@
-﻿//Sum massiv
+﻿//massiv
 using Massivs.Classes;
 
-int[] massiv = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 ,9};
+int[] massiv = new int[] { 1, 7, 3, 5, 5, 6, 8, 2 ,9};
 
 int s = Massiv.SumMassiv(massiv);
 
@@ -22,3 +22,8 @@ Console.WriteLine($"Toq={stub}");
 Console.WriteLine($"IndexToq={sIndexToq}");
 
 Console.WriteLine($"Sum Index KV={SumIndexKv}");
+
+MassivSort.Sort(massiv);
+
+Console.WriteLine("\nTartiblangan massiv:");
+Console.WriteLine(string.Join(" ", massiv));
