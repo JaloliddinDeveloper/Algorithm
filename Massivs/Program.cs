@@ -27,3 +27,12 @@ MassivSort.Sort(massiv);
 
 Console.WriteLine("\nTartiblangan massiv:");
 Console.WriteLine(string.Join(" ", massiv));
+
+Console.Beep(220, 400); // A3 (Low)
+Console.Beep(294, 400); // D4
+Console.Beep(247, 400); // B3
+Console.Beep(220, 600); // A3 (Long sustain)
+Console.Beep(196, 400); // G3
+Console.Beep(220, 800); // A3 (Distant echo)
+Console.Beep(247, 400); // B3
+Console.Beep(294, 600); // D4 (Resonant end)
