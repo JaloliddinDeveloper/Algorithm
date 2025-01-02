@@ -21,7 +21,6 @@ for (int i = 0; i < studentCount; i++)
     students.Add(newStudent);
 }
 
-
 group1.AddMultipleStudents(students);
 
 Console.WriteLine("\nList of students in the group:");

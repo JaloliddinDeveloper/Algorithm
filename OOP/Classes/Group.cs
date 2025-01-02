@@ -8,7 +8,7 @@
         public void AddStudent(Student student)
         {
             students.Add(student);
-            student.Group = this; // Associate the student with the group
+            student.Group = this; 
         }
 
         public void ListStudents()
@@ -23,7 +23,7 @@
         {
             for (int i = 0; i < studentsList.Count; i++)
             {
-                AddStudent(studentsList[i]);  // Add each student in the list
+                AddStudent(studentsList[i]); 
             }
         }
     }
