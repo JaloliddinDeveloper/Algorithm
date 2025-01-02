@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace Relations.Models
+namespace Relations.Models.OneToOnes
 {
     public class TeacherProfile
     {
