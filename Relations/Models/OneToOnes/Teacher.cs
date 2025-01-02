@@ -1,4 +1,4 @@
-﻿namespace Relations.Models
+﻿namespace Relations.Models.OneToOnes
 {
     public class Teacher
     {

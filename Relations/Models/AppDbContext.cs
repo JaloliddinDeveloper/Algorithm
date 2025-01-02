@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Relations.Models.OneToMany;
+using Relations.Models.OneToOnes;
 
 namespace Relations.Models
 {
@@ -15,5 +17,8 @@ namespace Relations.Models
         }
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<TeacherProfile> TeacherProfiles { get; set; }
+
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Group> Groups { get; set; }
     }
 }
