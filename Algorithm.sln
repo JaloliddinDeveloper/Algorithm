@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Massivs", "Massivs\Massivs.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{B6AE537D-0F70-429C-9198-D4435EDA2DB6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relations", "Relations\Relations.csproj", "{1D9FA10C-8D6E-42DE-A6C3-DFED7162F022}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B6AE537D-0F70-429C-9198-D4435EDA2DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6AE537D-0F70-429C-9198-D4435EDA2DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6AE537D-0F70-429C-9198-D4435EDA2DB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D9FA10C-8D6E-42DE-A6C3-DFED7162F022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D9FA10C-8D6E-42DE-A6C3-DFED7162F022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D9FA10C-8D6E-42DE-A6C3-DFED7162F022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D9FA10C-8D6E-42DE-A6C3-DFED7162F022}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
