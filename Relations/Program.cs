@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Relations.Models;
+using Relations.Models.OneToMany;
 using Relations.Models.OneToOnes;
 
 using (var db = new AppDbContext())
@@ -24,6 +25,13 @@ using (var db = new AppDbContext())
     }   
 
 
+    var group1 = new Group { GroupName = "MathOne" };
+    var group2 = new Group { GroupName = "MathTwo" };
+    db.Groups.AddRange(group1, group2);
 
+    var student1 = new Student { Name = "Ali", GroupId=1 };
+    var student2 = new Student { Name = "Vali", GroupId=2 };
 
+    db.Students.AddRange(student1, student2);
+    db.SaveChanges();
 }   

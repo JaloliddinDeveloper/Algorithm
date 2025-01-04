@@ -82,5 +82,25 @@
             }
             return s;
         }
+
+        public static int[] ShowAllOddNumbers(int n)
+        {
+           
+            int count = (n + 1) / 2; 
+            int[] odd = new int[count]; 
+            int k = 0; 
+
+            for (int i = 1; i <= n; i++)
+            {
+                if (i % 2 == 1) 
+                {
+                    odd[k] = i;
+                    k++; 
+                }
+            }
+
+            return odd;
+        }
+
     }
 }
