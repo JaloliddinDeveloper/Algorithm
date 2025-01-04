@@ -1,2 +1,2 @@
 ﻿using Numbers.Classes;
-Console.WriteLine(Find.SummN(5));
+Console.WriteLine(Find.MaxOfNumbers(5));

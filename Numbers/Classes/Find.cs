@@ -130,14 +130,14 @@
 
             if (n <= 0)
             {
-                return -1; 
+                return -1;
             }
 
-            int i = 0; 
+            int i = 0;
             while (n % 3 == 0)
             {
-                n /= 3; 
-                i++; 
+                n /= 3;
+                i++;
             }
             return n == 1 ? i : -1;
         }
@@ -152,5 +152,19 @@
             return sum;
         }
 
+        public static int MaxOfNumbers(int n)
+        {
+            int max = int.MinValue;
+            for (int i = 0; i < n; i++)
+            {
+                int number = int.Parse(Console.ReadLine());
+                if (number > max)
+                {
+                    max = number;
+                }
+            }
+            return max;
+        }
     }
+        
 }
