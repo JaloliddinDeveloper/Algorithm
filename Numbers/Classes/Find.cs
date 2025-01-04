@@ -165,6 +165,18 @@
             }
             return max;
         }
+
+        public static int FindFinallyNumber(int n)
+        {
+            int i = 0;
+            int sum = 0;
+            while (sum <= n)
+            {
+                i++;
+                sum += i;
+            }
+            return i - 1;
+        }
     }
-        
+
 }
