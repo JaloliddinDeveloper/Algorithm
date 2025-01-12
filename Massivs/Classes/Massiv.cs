@@ -102,5 +102,26 @@
             return odd;
         }
 
+        public static void AddTwoMassiv(int[] a, int[] b)
+        {
+
+            int s = a.Length + b.Length;
+            int[] k = new int[s];
+            for (int i = 0; i < s; i++)
+            {
+                if (i < a.Length)
+                {
+                    k[i] = a[i];
+                }
+                else
+                {
+                    k[i] = b[i - a.Length];
+                }
+            }
+            for (int j = 0; j < s; j++)
+            {
+                Console.WriteLine(k[j]);
+            }
+        }
     }
 }

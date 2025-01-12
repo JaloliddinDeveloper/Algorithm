@@ -177,6 +177,18 @@
             }
             return i - 1;
         }
+
+        public static void BolinmaVaQoldiq(int a,int b)
+        {
+            int i = 0;
+            while (a >= b)
+            {
+                a = a - b;
+                i++;
+            }
+            Console.WriteLine($"Bo'linma {i}");
+            Console.WriteLine($"Qoldiq {a}");
+        }
     }
 
 }
