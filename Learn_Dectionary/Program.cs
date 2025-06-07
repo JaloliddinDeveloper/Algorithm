@@ -51,31 +51,49 @@
 // Task 3:
 // Puple Dictionary
 
-Dictionary<string, List<double>> student = new Dictionary<string, List<double>>();
+//Dictionary<string, List<double>> student = new Dictionary<string, List<double>>();
 
-for (int i = 1; i <= 2; i++)
-{
-    Console.Write("Enter Name: ");
-    string name = Console.ReadLine();
+//for (int i = 1; i <= 2; i++)
+//{
+//    Console.Write("Enter Name: ");
+//    string name = Console.ReadLine();
 
-    List<double> marks = new List<double>();
+//    List<double> marks = new List<double>();
 
-    for (int j = 1; j <= 3; j++)
-    {
-        Console.Write("Enter Mark: ");
-        double mark = double.Parse(Console.ReadLine());
+//    for (int j = 1; j <= 3; j++)
+//    {
+//        Console.Write("Enter Mark: ");
+//        double mark = double.Parse(Console.ReadLine());
 
-        marks.Add(mark);
-    }
+//        marks.Add(mark);
+//    }
 
-    student.Add(name, marks);
-}
+//    student.Add(name, marks);
+//}
 
-foreach (var item in student)
-{
-    double average = item.Value.Average();
-    if (item.Value.Count > 0)
-    {
-         Console.WriteLine($"Name: {item.Key}, Average Marks: {average:F2}");
-    }   
-}
+//foreach (var item in student)
+//{
+//    double average = item.Value.Average();
+//    if (item.Value.Count > 0)
+//    {
+//         Console.WriteLine($"Name: {item.Key}, Average Marks: {average:F2}");
+//    }   
+//}
+
+// Task 4:
+
+//Dictionary<string, int> students = new Dictionary<string, int>();
+
+//for (int i = 1; i <= 3; i++)
+//{
+//    Console.Write("Enter name: ");
+//    string name = Console.ReadLine();
+//    Console.Write("Enter age: ");
+//    int age = int.Parse(Console.ReadLine());
+
+//    students.Add(name, age);
+//}
+
+//int maxAge = students.Values.Max();
+//string oldestStudent = students.FirstOrDefault(x => x.Value == maxAge).Key;
+//Console.WriteLine($"Oldest student: {oldestStudent}, Age: {maxAge}");
