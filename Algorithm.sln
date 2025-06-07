@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relations", "Relations\Rela
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numbers", "Numbers\Numbers.csproj", "{6986C8E7-EFB9-4D3A-B1E5-3CD6CFA37E65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn_Dectionary", "Learn_Dectionary\Learn_Dectionary.csproj", "{A3B25ACC-0809-444F-A563-AEBCFF70ACA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6986C8E7-EFB9-4D3A-B1E5-3CD6CFA37E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6986C8E7-EFB9-4D3A-B1E5-3CD6CFA37E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6986C8E7-EFB9-4D3A-B1E5-3CD6CFA37E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3B25ACC-0809-444F-A563-AEBCFF70ACA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3B25ACC-0809-444F-A563-AEBCFF70ACA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3B25ACC-0809-444F-A563-AEBCFF70ACA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3B25ACC-0809-444F-A563-AEBCFF70ACA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
