@@ -23,26 +23,59 @@
 
 // Task 2:
 // Fructy Dictionary
-Dictionary<string, decimal> fruits = new Dictionary<string, decimal>();
+//Dictionary<string, decimal> fruits = new Dictionary<string, decimal>();
 
-for (int i = 1; i <= 3; i++)
+//for (int i = 1; i <= 3; i++)
+//{
+//    Console.Write("Enter fruit name: ");
+//    string fruitName = Console.ReadLine();
+//    Console.Write("Enter fruit price: ");
+//    decimal fruitPrice = decimal.Parse(Console.ReadLine());
+//    fruits.Add(fruitName, fruitPrice);
+//}
+
+//Console.WriteLine("Choose fruit");
+
+//string chosenFruit = Console.ReadLine();
+
+//if (fruits.ContainsKey(chosenFruit))
+//{
+//    Console.WriteLine($"The price of {chosenFruit} is {fruits[chosenFruit]}");
+//}
+//else
+//{
+//    Console.WriteLine("This fruit is not available in the dictionary.");
+//}
+
+
+// Task 3:
+// Puple Dictionary
+
+Dictionary<string, List<double>> student = new Dictionary<string, List<double>>();
+
+for (int i = 1; i <= 2; i++)
 {
-    Console.Write("Enter fruit name: ");
-    string fruitName = Console.ReadLine();
-    Console.Write("Enter fruit price: ");
-    decimal fruitPrice = decimal.Parse(Console.ReadLine());
-    fruits.Add(fruitName, fruitPrice);
+    Console.Write("Enter Name: ");
+    string name = Console.ReadLine();
+
+    List<double> marks = new List<double>();
+
+    for (int j = 1; j <= 3; j++)
+    {
+        Console.Write("Enter Mark: ");
+        double mark = double.Parse(Console.ReadLine());
+
+        marks.Add(mark);
+    }
+
+    student.Add(name, marks);
 }
 
-Console.WriteLine("Choose fruit");
-
-string chosenFruit = Console.ReadLine();
-
-if (fruits.ContainsKey(chosenFruit))
+foreach (var item in student)
 {
-    Console.WriteLine($"The price of {chosenFruit} is {fruits[chosenFruit]}");
-}
-else
-{
-    Console.WriteLine("This fruit is not available in the dictionary.");
+    double average = item.Value.Average();
+    if (item.Value.Count > 0)
+    {
+         Console.WriteLine($"Name: {item.Key}, Average Marks: {average:F2}");
+    }   
 }
