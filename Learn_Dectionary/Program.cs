@@ -97,3 +97,23 @@
 //int maxAge = students.Values.Max();
 //string oldestStudent = students.FirstOrDefault(x => x.Value == maxAge).Key;
 //Console.WriteLine($"Oldest student: {oldestStudent}, Age: {maxAge}");
+
+// Task 5:
+
+Dictionary<string, int> students = new Dictionary<string, int>();
+
+for (int i = 1; i <= 3; i++)
+{
+    Console.Write("Enter name: ");
+    string name = Console.ReadLine();
+    Console.Write("Enter age: ");
+    int age = int.Parse(Console.ReadLine());
+
+    students.Add(name, age);
+}
+var studentSorted = students.OrderByDescending(a => a.Value);
+
+foreach (var student in studentSorted)
+{
+    Console.WriteLine($"Name: {student.Key}, Age: {student.Value}");
+}       
