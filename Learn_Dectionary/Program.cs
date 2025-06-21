@@ -100,20 +100,79 @@
 
 // Task 5:
 
-Dictionary<string, int> students = new Dictionary<string, int>();
+//Dictionary<string, int> students = new Dictionary<string, int>();
 
-for (int i = 1; i <= 3; i++)
+//for (int i = 1; i <= 3; i++)
+//{
+//    Console.Write("Enter name: ");
+//    string name = Console.ReadLine();
+//    Console.Write("Enter age: ");
+//    int age = int.Parse(Console.ReadLine());
+
+//    students.Add(name, age);
+//}
+//var studentSorted = students.OrderByDescending(a => a.Value);
+
+//foreach (var student in studentSorted)
+//{
+//    Console.WriteLine($"Name: {student.Key}, Age: {student.Value}");
+//}       
+
+// Task 6:
+
+//Dictionary<string, int> students = new Dictionary<string, int>();
+
+//students.Add("Alice", 20);
+//students.Add("Bob", 22);
+//students.Add("Charlie", 21);
+
+
+//Console.WriteLine(students["Alice"]);
+
+
+int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+int k = 6;
+bool found = false;
+int left = 0;
+int right = nums.Length - 1;
+
+while (left <= right)
 {
-    Console.Write("Enter name: ");
-    string name = Console.ReadLine();
-    Console.Write("Enter age: ");
-    int age = int.Parse(Console.ReadLine());
+    int mid= (left + right) / 2;
 
-    students.Add(name, age);
+    if(nums[mid] == k)
+    {
+        Console.WriteLine($"Topildi: {nums[mid]} Index: {mid}");
+        found = true;
+        break;
+    }
+
+    else if(nums[mid] > k)
+    {
+        right = mid - 1;
+    }
+    else
+    {
+        left = mid + 1;
+    }
 }
-var studentSorted = students.OrderByDescending(a => a.Value);
 
-foreach (var student in studentSorted)
+if(!found)
 {
-    Console.WriteLine($"Name: {student.Key}, Age: {student.Value}");
-}       
+    Console.WriteLine("Yo'q");
+}
+
+//for (int i = 0; i < nums.Length; i++)
+//{
+//    if (nums[i] == k)
+//    {
+//        Console.WriteLine($"Found {k} at index {i}");
+//        found = true;
+//        break;
+//    }
+//}
+
+//if (!found)
+//{
+//    Console.WriteLine($"{k} not found in the array.");
+//}
